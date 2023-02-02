@@ -17,7 +17,16 @@ def search
     end
 
   else kind == 'user'
-
+    case match_type
+    when 'perfect_match' then
+      @users = User.where(title: keyword)
+    when 'forward_match' then
+      @users = User.where("title LIKE ?", "%#{keyword}")
+    when 'backword_match' then
+      @users = User.where("title LIKE ?", "#{keyword}%")
+    when 'partial_match' then
+      @users = User.where("title LIKE ?", "%#{keyword}%")
+    end
   end
 end
 
