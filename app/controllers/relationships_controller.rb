@@ -8,4 +8,11 @@ class RelationshipsController < ApplicationController
 
   def destoy
   end
+
+  def show_follow
+  end
+
+  def show_follower
+
+  end
 end

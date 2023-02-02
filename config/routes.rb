@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   root :to =>"homes#top"
   get "home/about"=>"homes#about"
-
+  get "relationship/show_follow"=>"relationships#show_follow"
+  get "relationship/show_follower"=>"relationships#show_follower"
 
   devise_for :users
 
