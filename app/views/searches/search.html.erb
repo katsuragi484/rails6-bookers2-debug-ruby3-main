@@ -1,6 +1,5 @@
 <% if @kind == 'book'%>
-
-<h1>Books search for "<% puts @keyword %>"</h1>
+  <h1>Books search for "<%= @keyword %>"</h1>
   <% if @books.exists? %>
 
     <table class="table">
@@ -27,7 +26,7 @@
 
   <% end %>
 <% else %>
-<h1>Users search for "<% puts @keyword %>"</h1>
+<h1>Users search for "<%= @keyword %>"</h1>
 
   <% if @users.exists? %>
     <table class="table">
