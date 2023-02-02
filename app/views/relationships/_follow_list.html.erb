@@ -1,0 +1,25 @@
+
+<table class='table'>
+  <thead>
+    <tr>
+      <td>image</td>
+      <td>name</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.each do |user| %>
+    <tr>
+      <td><%= image_tag user.get_profile_image, size: '50x50'%></td>
+      <td><%= user.name %></td>
+      <td>フォロー数：<%= user.followers.count%></td>
+      <td>フォロワー数：<%= user.followings.count%></td>
+      <td><%= link_to 'Show', user %></td>
+    </tr>
+    <% end %>
+
+  </tbody>
+
+</table>

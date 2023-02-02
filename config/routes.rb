@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   root :to =>"homes#top"
   get "home/about"=>"homes#about"
-  get "relationship/show_follow"=>"relationships#show_follow"
-  get "relationship/show_follower"=>"relationships#show_follower"
 
   devise_for :users
 
@@ -14,6 +12,9 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:index,:show,:edit,:update] do
     resource :relationships, only: [:create, :destroy]
+    get "relationship/index_follow"=>"relationships#index_follow"
+    get "relationship/index_follower"=>"relationships#index_follower"
+
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
