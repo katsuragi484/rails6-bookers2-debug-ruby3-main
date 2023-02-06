@@ -1,0 +1,137 @@
+[33mcommit ad180e6ee6c21dac609b297cd67147920bbb50b9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Feb 6 09:27:43 2023 +0000
+
+    [Add]booksViewページ‗いいね順反映
+
+[33mcommit 1f9cac029d68a9d20a7475176faf953edef8fe07[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Feb 6 05:28:31 2023 +0000
+
+    [Modify_Finish]コメント数
+
+[33mcommit cd6c7f065461f8c60b6c23d24241641e2613c77c[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Feb 6 01:50:55 2023 +0000
+
+    [Finish]応用課題6
+
+[33mcommit e0e8cf6a5c61052823b70ef127ac6c5d8c747760[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Sat Feb 4 13:40:12 2023 +0000
+
+    [Modify]いいね機能_destroy
+
+[33mcommit 9526e259d41c3e3223aac841502f413c023efb90[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Sat Feb 4 13:30:43 2023 +0000
+
+    [Modify]いいね機能createの非同期
+
+[33mcommit 98df0df727244223b7e748d5df0fa931d8ce4494[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Fri Feb 3 10:06:50 2023 +0000
+
+    [Add]いいね機能(未完成)
+
+[33mcommit 538853cdfcbdec15ec8dd8150614c22deccbbe10[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Fri Feb 3 05:07:28 2023 +0000
+
+    [Modify]いいねボタン_favorite-btn.html.erbに修正
+
+[33mcommit a9f3689c1064e162b63d0f49fd8c3b129d624976[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 10:53:08 2023 +0000
+
+    [Finish]応用課題5
+
+[33mcommit 38bc1f02ba1c90ae965657689d801526d5373c6f[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 09:52:01 2023 +0000
+
+    [Update]検索の機能完成(表示未完成)
+
+[33mcommit dd41f660febf886a42258e093303bfa1eb6d463f[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 06:59:02 2023 +0000
+
+    [Update]検索機能_viewページ
+
+[33mcommit e529ce0bf2d540a2cbf9314592527e8013910d2c[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 06:43:48 2023 +0000
+
+    [Add]検索機能
+
+[33mcommit b87c08a4a1c0e6467887c71479d03b45ab284f76[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 03:16:35 2023 +0000
+
+    [Finish]応用課題4
+
+[33mcommit 7a3b90de687950779190685e33d0fbfbbd9afdac[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 02:51:33 2023 +0000
+
+    [Modify]view：正しいフォロー数フォロワー数表示可能
+
+[33mcommit 6d5702c39d756f1d1182a90ba10acee83ff86c3c[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Feb 2 00:39:38 2023 +0000
+
+    [Add]relationship viewページ
+
+[33mcommit 942082c6bf06db828be38e1d875f451b1797cfb2[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Wed Feb 1 09:43:34 2023 +0000
+
+    [Modify]relationshipのcreate
+
+[33mcommit f862c878679477090de2cfd7434d31f4e858ef7c[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Wed Feb 1 06:53:18 2023 +0000
+
+    [Add]応用課題4_モデル,コントローラ作成
+
+[33mcommit 12d33272246c6359e557e231755660ec92d71a37[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Jan 30 12:01:38 2023 +0000
+
+    [Finish]応用課題3
+
+[33mcommit 0a6a0d3e42dc71ff70ba94f3477fd4f448b80665[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Jan 30 07:13:55 2023 +0000
+
+    [Add]コメント機能途中
+
+[33mcommit d9e426778b3ad9d7c82dd7740757387860440ee9[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Mon Jan 30 01:01:26 2023 +0000
+
+    [Add]いいね機能完成
+
+[33mcommit a9dd1b5ad6f6f0e8f765142d9e4eabb284849a67[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Fri Jan 27 07:54:49 2023 +0000
+
+    [Add]応用課題3_いいね機能_コントローラ,モデル作成
+
+[33mcommit fbb7fce45341414dd87871f59172ae4f975fa428[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Fri Jan 27 06:04:04 2023 +0000
+
+    [Finish]応用課題2
+
+[33mcommit 79649112765bb4c0d4eea4f2bd19069155ab0751[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Jan 26 10:22:24 2023 +0000
+
+    [Add]15まで
+
+[33mcommit 2a6be570b58fd9d89af8e7e1c95edc1d3e6c1543[m
+Author: katsuragi484 <84887671+katsuragi484@users.noreply.github.com>
+Date:   Thu Jan 26 05:26:35 2023 +0000
+
+    [Start]
