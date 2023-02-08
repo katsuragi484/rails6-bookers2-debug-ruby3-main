@@ -15,6 +15,9 @@ class User < ApplicationRecord
   has_many :followings, through: :relationships, source: :followed
   has_many :followers, through: :reverse_of_relationships, source: :follower
 
+  has_many :entries, dependent: :destroy
+  has_many :messages, dependent: :destroy
+
   has_one_attached :profile_image
 
 
@@ -24,6 +27,11 @@ class User < ApplicationRecord
 
   def get_profile_image
     (profile_image.attached?) ? profile_image : 'no_image.jpg'
+  end
+
+  def followed_by?(user)
+    # 今自分(引数のuser)がフォローしようとしているユーザー(レシーバー)がフォローされているユーザー(つまりpassive)の中から、引数に渡されたユーザー(自分)がいるかどうかを調べる
+    reverse_of_relationships.find_by(followed_id: user.id).present?
   end
 
 
