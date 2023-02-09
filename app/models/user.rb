@@ -29,10 +29,6 @@ class User < ApplicationRecord
     (profile_image.attached?) ? profile_image : 'no_image.jpg'
   end
 
-  def followed_by?(user)
-    # 今自分(引数のuser)がフォローしようとしているユーザー(レシーバー)がフォローされているユーザー(つまりpassive)の中から、引数に渡されたユーザー(自分)がいるかどうかを調べる
-    reverse_of_relationships.find_by(followed_id: user.id).present?
-  end
 
 
   # フォローしたときの処理
