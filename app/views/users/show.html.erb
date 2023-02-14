@@ -11,6 +11,7 @@
       <%= render 'books/index',books: @books %>
       
       <%= render 'books_rate', today_book: @today_book, yesterday_book: @yesterday_book, this_week_book: @this_week_book, last_week_book: @last_week_book%>
+      <%= render 'books_week', today_book: @today_book, yesterday_book: @yesterday_book, two_days_ago_book: @two_days_ago_book, three_days_ago_book: @three_days_ago_book, four_days_ago_book: @four_days_ago_book, five_days_ago_book: @five_days_ago_book, six_days_ago_book: @six_days_ago_book%>
 
     </div>
   </div>
