@@ -11,37 +11,5 @@
       <%= render 'index', books: @books%>
 
 
-      <h2>投稿数の前日比・前週比</h2>
-
-    </div>
-    <table class="table table-bordered">
-      <tr>
-        <td>今日の投稿数</td>
-        <td>前日の投稿数</td>
-        <td>前日比</td>
-      </tr>
-      <tr>
-        <td><%= current_user.books.where(created_at: Time.zone.now.all_day).count %></td>
-        <td><%= current_user.books.where(created_at: 1.day.ago.all_day).count %></td>
-        <% if current_user.books.where(created_at: 1.day.ago.all_day).count == 0 %>
-          <td>0%</td>
-        <% else %>
-        <%= (current_user.books.where(created_at: Time.zone.now.all_day).count) / (current_user.books.where(created_at: 1.day.ago.all_day).count) %></td>
-        <% end %>
-      </tr>
-    </table>
-    <table class="table table-bordered">
-      <tr>
-        <td>今週の投稿数</td>
-        <td>前週の投稿数</td>
-        <td>前週比</td>
-      </tr>
-      <tr>
-        <td><%= current_user.books.where('created_at > ?', Date.today).count %></td>
-        <td></td>
-        <td></td>
-
-      </tr>
-    </table>
   </div>
 </div>
