@@ -9,9 +9,50 @@
     <div class='col-md-8 offset-md-1'>
       <h2>Books</h2>
       <%= render 'books/index',books: @books %>
-      
+
       <%= render 'books_rate', today_book: @today_book, yesterday_book: @yesterday_book, this_week_book: @this_week_book, last_week_book: @last_week_book%>
       <%= render 'books_week', today_book: @today_book, yesterday_book: @yesterday_book, two_days_ago_book: @two_days_ago_book, three_days_ago_book: @three_days_ago_book, four_days_ago_book: @four_days_ago_book, five_days_ago_book: @five_days_ago_book, six_days_ago_book: @six_days_ago_book%>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  let today_book = '<%== JSON.dump(@today_book.count)%>'
+  let yesterday_book = '<%== JSON.dump(@yesterday_book.count)%>'
+  let two_days_ago_book = '<%== JSON.dump(@two_days_ago_book.count)%>'
+  let three_days_ago_book = '<%== JSON.dump(@three_days_ago_book.count)%>'
+  let four_days_ago_book = '<%== JSON.dump(@four_days_ago_book.count)%>'
+  let five_days_ago_book = '<%== JSON.dump(@five_days_ago_book.count)%>'
+  let six_days_ago_book = '<%== JSON.dump(@six_days_ago_book.count)%>'
+
+
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['6日前', '5日前', '4日前', '3日前', '2日前', '1日前', '今日'],
+      datasets: [{
+        label: '投稿した本の数',
+        data: [six_days_ago_book, five_days_ago_book, four_days_ago_book, three_days_ago_book, two_days_ago_book, yesterday_book, today_book],
+        borderWidth: 3,
+        borderColor: 'rgba(0,0,255,0.5)',
+        tension: 0.4,
+
+
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 10
+
+        }
+
+      }
+    }
+  });
+</script>
 
     </div>
   </div>
