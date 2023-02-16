@@ -18,6 +18,14 @@ class UsersController < ApplicationController
     @this_week_book = @books.created_this_week
     @last_week_book = @books.created_last_week
 
+    if params[:created_at] == ""
+      create_at = "検索してください"
+    else
+      create_at  = params[:created_at]
+      @search_book = Book.where(['created_at LIKE ?',"#{create_at}%"]).count
+    end
+
+
     to  = Time.current.at_end_of_day
     from  = (to - 6.day).at_beginning_of_day
     @books = Book.includes(:favorites).sort_by {|x| x.favorites.where(created_at: from...to).size}.reverse

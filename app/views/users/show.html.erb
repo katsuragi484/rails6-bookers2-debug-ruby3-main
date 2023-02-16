@@ -54,6 +54,10 @@
   });
 </script>
 
+<%= form_with url:user_path(params[:id]), method: :get, remote:true do |f| %>
+  <%= f.date_field :created_at %>
+  <%= f.submit %>
+<% end %>
     </div>
   </div>
 </div>
