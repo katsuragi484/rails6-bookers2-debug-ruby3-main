@@ -17,10 +17,13 @@ Rails.application.routes.draw do
     resource :relationships, only: [:create, :destroy]
     get "relationship/index_follow"=>"relationships#index_follow"
     get "relationship/index_follower"=>"relationships#index_follower"
+    get "search"=>"users#search"
   end
 
   resources :messages, only: [:create]
   resources :rooms, only: [:create, :index, :show]
+
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 

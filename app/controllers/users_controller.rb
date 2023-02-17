@@ -18,17 +18,18 @@ class UsersController < ApplicationController
     @this_week_book = @books.created_this_week
     @last_week_book = @books.created_last_week
 
+  
     if params[:created_at] == ""
-      create_at = "検索してください"
+      @search_book = "日付を選択してください"#①
     else
-      create_at  = params[:created_at]
-      @search_book = Book.where(['created_at LIKE ?',"#{create_at}%"]).count
+      create_at = params[:created_at]
+      @search_book = @books.where(['created_at LIKE ? ', "#{create_at}%"]).count#②
     end
-
+    
 
     to  = Time.current.at_end_of_day
     from  = (to - 6.day).at_beginning_of_day
-    @books = Book.includes(:favorites).sort_by {|x| x.favorites.where(created_at: from...to).size}.reverse
+    @books = @user.books.includes(:favorites).sort_by {|x| x.favorites.where(created_at: from...to).size}.reverse
 
 
     @current_entry = Entry.where(user_id: current_user.id)
@@ -50,6 +51,17 @@ class UsersController < ApplicationController
 
 
 
+  end
+  
+    def search
+    @user = User.find(params[:user_id])
+    @books = @user.books 
+    if params[:created_at] == ""
+      @search_book = "日付を選択してください"#①
+    else
+      create_at = params[:created_at]
+      @search_book = @books.where(['created_at LIKE ? ', "#{create_at}%"]).count#②
+    end
   end
 
   def index
